@@ -57,31 +57,108 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="hmbr-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hmbr"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
+      <!-- MOBILE MENU -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-modal-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="mobile-menu-link active link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="modal-address-list list">
+          <li class="modal-address-list-item-tel">
+            <a class="mobile-address-link-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="modal-address-list-item-email">
+            <a
+              class="mobile-address-link-email link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-links-container list">
+          <li class="social-links-items-container">
+            <a href="" class="social-links link">
+              <svg class="social-icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-items-container">
+            <a href="" class="mobile-social-links link">
+              <svg class="social-icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-items-container">
+            <a href="" class="mobile-social-links link">
+              <svg class="social-icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-links-items-container">
+            <a href="" class="mobile-social-links link">
+              <svg class="social-icons" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <section class="portfolio-section">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="button-list list">
-            <li>
+            <li class="portfolio-list-buttons">
               <button type="button" class="button-list-item link">All</button>
             </li>
-            <li>
+            <li class="portfolio-list-buttons">
               <button type="button" class="button-list-item link">
                 Web Site
               </button>
             </li>
-            <li>
+            <li class="portfolio-list-buttons">
               <button type="button" class="button-list-item link">App</button>
             </li>
-            <li>
+            <li class="portfolio-list-buttons">
               <button type="button" class="button-list-item link">
                 Design
               </button>
             </li>
-            <li>
+            <li class="portfolio-list-buttons">
               <button type="button" class="button-list-item link">
                 Marketing
               </button>
@@ -92,9 +169,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/app.jpg"
                     alt="Banking App Interface Concept"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -115,9 +193,11 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
+                    class="portfolio-list-box-img"
                     src="./images/payment.jpg"
                     alt="Cashless Payment"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -136,9 +216,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/meditation-app.jpg"
                     alt="Meditation App"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -157,9 +238,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/taxi-service.jpg"
                     alt="Taxi Service"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -179,9 +261,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/screen-illustrations.jpg"
                     alt="Screen Illustrations"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -202,7 +285,7 @@
                   <img
                     src="./images/online-courses.jpg"
                     alt="Online Courses"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -222,9 +305,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/instagram.jpg"
                     alt="Instagram Stories Concept"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -247,7 +331,7 @@
                   <img
                     src="./images/organic-food.jpg"
                     alt="Organic Food"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -266,9 +350,10 @@
               <a class="portfolio-list-link link" href="">
                 <div class="portfolio-list-box">
                   <img
+                    class="portfolio-list-box-img"
                     src="./images/fresh-coffee.jpg"
                     alt="Fresh Coffee"
-                    width="360"
+                    width="396"
                   />
 
                   <p class="overlay-text overlay">
@@ -287,15 +372,16 @@
         </div>
       </section>
     </main>
+
     <footer class="footer-section">
-      <div class="container footer-container">
+      <div class="footer-container container">
         <div class="footer-container-logo">
           <a href="./index.html" class="footer-logo link">
             Web<span class="footer-logo-ithem">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            digital marketing &amp; growth solutions.
           </p>
         </div>
         <div class="footer-container-social-media">
@@ -353,5 +439,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
